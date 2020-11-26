@@ -1,1 +1,2 @@
 # study-gcloud
+gcloud compute instances create --boot-disk-size=10G --image=ubuntu-1604-xenial-v20201111a --image-project=ubuntu-os-cloud --machine-type=f1-micro --tags puma-server --labels=role=willberemoved24h --preemptible --restart-on-failure --zone=europe-west3-b reddit-app --metadata  startup-script='wget -O -  https://raw.githubusercontent.com/simargll/study-gcloud/main/installsoft.txt | bash'
